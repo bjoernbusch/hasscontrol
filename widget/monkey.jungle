@@ -34,3 +34,29 @@ instinct2x.excludeAnnotations = fullmem
 instinctcrossover.excludeAnnotations = fullmem
 venusq.excludeAnnotations = fullmem
 vivoactive3.excludeAnnotations = fullmem
+
+# ── Launcher icon variants ───────────────────────────────────────────────────
+# The default launcher icon (resources/drawables) is the square logo. Regenerate
+# all variants from resources/logos/launcher-*.svg with
+# tools/render_launcher_icon.swift.
+#
+# Round: the Venu / vivoactive glance style draws the launcher icon inside a
+# circle, which the square icon's corners stick out of.
+d2airx10.resourcePath = $(d2airx10.resourcePath);resources-launcher-round
+venu2.resourcePath = $(venu2.resourcePath);resources-launcher-round
+venu2plus.resourcePath = $(venu2plus.resourcePath);resources-launcher-round
+venu2s.resourcePath = $(venu2s.resourcePath);resources-launcher-round
+venu3.resourcePath = $(venu3.resourcePath);resources-launcher-round
+venu3s.resourcePath = $(venu3s.resourcePath);resources-launcher-round
+venu441mm.resourcePath = $(venu441mm.resourcePath);resources-launcher-round
+venu445mm.resourcePath = $(venu445mm.resourcePath);resources-launcher-round
+vivoactive5.resourcePath = $(vivoactive5.resourcePath);resources-launcher-round
+vivoactive6.resourcePath = $(vivoactive6.resourcePath);resources-launcher-round
+
+# Non-square icon slot: the compiler would stretch the square icon to fit, so
+# these get a padded copy that keeps its proportions.
+vivoactive3.resourcePath = $(vivoactive3.resourcePath);resources-launcher-40x33
+vivoactive3m.resourcePath = $(vivoactive3m.resourcePath);resources-launcher-40x33
+vivoactive3mlte.resourcePath = $(vivoactive3mlte.resourcePath);resources-launcher-40x33
+etrextouch.resourcePath = $(etrextouch.resourcePath);resources-launcher-38x33
+gpsmap67.resourcePath = $(gpsmap67.resourcePath);resources-launcher-38x33
