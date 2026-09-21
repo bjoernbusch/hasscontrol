@@ -3,14 +3,14 @@
 // so a round icon stays round instead of being stretched into an oval.
 //
 // Usage: swift tools/render_launcher_icon.swift <in.svg> <out.png> <width> [height]
-// e.g.   swift tools/render_launcher_icon.swift ../resources/logos/launcher-square.svg \
+// e.g.   swift tools/render_launcher_icon.swift ../resources/logos/launcher-round.svg \
 //          resources/drawables/launcher_icon.png 70
 //
-// Variants (see the launcher icon section in monkey.jungle):
-//   launcher-square.svg -> resources/drawables                70
-//   launcher-round.svg  -> resources-launcher-round/drawables 70
-//   launcher-square.svg -> resources-launcher-40x33/drawables 40 33
-//   launcher-square.svg -> resources-launcher-38x33/drawables 38 33
+// Targets (see the launcher icon section in monkey.jungle), all rendered from
+// launcher-round.svg:
+//   resources/drawables                70
+//   resources-launcher-40x33/drawables 40 33
+//   resources-launcher-38x33/drawables 38 33
 import AppKit
 
 let args = CommandLine.arguments

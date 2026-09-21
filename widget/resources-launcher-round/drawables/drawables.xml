@@ -1,9 +1,0 @@
-<resources>
-    <drawables>
-        <!-- Devices whose glance shows the launcher icon inside a circle (the
-             Venu / vivoactive glance style): the square icon's corners would
-             stick out of it, so they get a round one. Wired up per device in
-             monkey.jungle. -->
-        <bitmap id="LauncherIcon" filename="launcher_icon.png" />
-    </drawables>
-</resources>
